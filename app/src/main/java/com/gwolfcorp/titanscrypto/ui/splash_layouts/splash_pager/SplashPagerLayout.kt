@@ -74,7 +74,7 @@ fun SplashPagerLayout() {
             modifier = Modifier.layoutId("splash_pager_bottom_gradient"),
             painter = painterResource(id = R.drawable.splash_pager_bottom_gradient),
             contentDescription = null,
-            contentScale = ContentScale.FillWidth)
+            contentScale = ContentScale.FillBounds)
 
         val pagerState = rememberPagerState()
 
@@ -151,7 +151,7 @@ private fun decoupledConstraints(): ConstraintSet {
         val leftGuidelineForButton = createGuidelineFromStart(0.3f)
         val rightGuidelineForButton = createGuidelineFromEnd(0.3f)
         val topGuidelineForButton = createGuidelineFromTop(0.785f)
-
+        val topGuidelineForGradient = createGuidelineFromBottom(0.44f)
 
         constrain(splashPager) {
             width = Dimension.fillToConstraints
@@ -189,7 +189,8 @@ private fun decoupledConstraints(): ConstraintSet {
 
         constrain(imgSplashPagerBottomGradient) {
             width = Dimension.fillToConstraints
-            bottom.linkTo(parent.bottom)
+            height = Dimension.fillToConstraints
+            linkTo(topGuidelineForGradient, parent.bottom,  bias = 1f)
             start.linkTo(parent.start)
             end.linkTo(parent.end)
         }

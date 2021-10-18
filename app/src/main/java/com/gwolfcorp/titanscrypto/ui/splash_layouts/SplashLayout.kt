@@ -42,8 +42,7 @@ fun SplashLayout() {
             fontFamily = poppinsFamily,
             fontWeight = FontWeight.Bold,
             fontSize = 36.sp,
-            color = MainGreenColor
-        )
+            color = MainGreenColor)
 
         Image(
             modifier = Modifier.layoutId("splash_triangle"),
@@ -61,7 +60,6 @@ fun SplashLayout() {
             contentDescription = null)
     }
 }
-
 
 @Preview(showBackground = true)
 @Composable

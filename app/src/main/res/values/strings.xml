@@ -7,4 +7,7 @@
     <string name="pager_second_layout_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</string>
     <string name="pager_third_layout_name">Transact fast and easy</string>
     <string name="pager_third_layout_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</string>
+    <string name="sign_in_text">Sign in</string>
+    <string name="sign_up_text">Sign up</string>
+
 </resources>
