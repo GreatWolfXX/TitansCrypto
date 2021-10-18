@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Titans Crypto</string>
+    <string name="splash_pager_next">Next</string>
+    <string name="pager_first_layout_name">Trade anytime anywhere</string>
+    <string name="pager_first_layout_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</string>
+    <string name="pager_second_layout_name">Save and invest at the same time</string>
+    <string name="pager_second_layout_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</string>
+    <string name="pager_third_layout_name">Transact fast and easy</string>
+    <string name="pager_third_layout_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</string>
+</resources>
