@@ -1,24 +1,14 @@
-package com.gwolfcorp.titanscrypto.ui
+package com.gwolfcorp.titanscrypto.ui.splash_layouts.splash_pager
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
-import androidx.compose.foundation.focusable
-import androidx.compose.foundation.gestures.FlingBehavior
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.geometry.Offset
-import androidx.compose.ui.graphics.Brush
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shadow
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.layout.layoutId
@@ -35,8 +25,9 @@ import com.google.accompanist.pager.ExperimentalPagerApi
 import com.google.accompanist.pager.HorizontalPager
 import com.google.accompanist.pager.rememberPagerState
 import com.gwolfcorp.titanscrypto.R
+import com.gwolfcorp.titanscrypto.ui.splash_layouts.SplashPointLayout
+import com.gwolfcorp.titanscrypto.ui.splash_layouts.splash_pager.pager_slides.PagerLayout
 import com.gwolfcorp.titanscrypto.ui.theme.*
-import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 
 @ExperimentalPagerApi
@@ -84,13 +75,19 @@ fun SplashPagerLayout() {
             state = pagerState) { page ->
             when(page) {
                 0 -> {
-                    PagerFirstLayout()
+                    PagerLayout(painterResource(id = R.drawable.pager_first_layout_img),
+                        stringResource(id = R.string.pager_first_layout_name),
+                        stringResource(id = R.string.pager_first_layout_description))
                 }
                 1 -> {
-                    PagerSecondLayout()
+                    PagerLayout(painterResource(id = R.drawable.pager_second_layout_img),
+                        stringResource(id = R.string.pager_second_layout_name),
+                        stringResource(id = R.string.pager_second_layout_description))
                 }
                 2 -> {
-                    PagerThirdLayout()
+                    PagerLayout(painterResource(id = R.drawable.pager_third_layout_img),
+                        stringResource(id = R.string.pager_third_layout_name),
+                        stringResource(id = R.string.pager_third_layout_description))
                 }
             }
         }

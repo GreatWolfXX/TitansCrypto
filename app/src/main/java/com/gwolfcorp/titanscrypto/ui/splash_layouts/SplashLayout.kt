@@ -1,4 +1,4 @@
-package com.gwolfcorp.titanscrypto.ui
+package com.gwolfcorp.titanscrypto.ui.splash_layouts
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
